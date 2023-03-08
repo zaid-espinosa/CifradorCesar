@@ -1,0 +1,156 @@
+:root {
+    --fuenteHeading: 'Chakra Petch', sans-serif;
+    --fuenteExtra: 'Bungee Hairline', cursive;
+    --blanco: #ffffff;
+    --negro: #000000;
+    --verde: #00b594ff;
+    --negroMate: #1c1c1c;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    margin: 0;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 2.3rem;
+    background-color: var(--negro);
+    
+}
+
+/* Globals */
+h1, p {
+    font-family: var(--fuenteHeading);
+    color: var(--verde);
+    text-align: center;
+}
+
+p {
+    font-size: xx-large;
+}
+
+/* Positions  */
+
+.campo {
+    display: grid;
+    justify-content: center;
+}
+
+.campo__boton {
+    grid-row: 2 / 3;
+}
+
+.mensaje,
+.mensaje__encriptado {
+    width: 30rem;
+    height: 25rem;
+    font-size: 19px;
+}
+
+input {
+    text-align: left;
+    vertical-align: top;
+}
+
+
+@media (min-width:768px){ 
+    .campo {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        border: 3rem solid;
+        margin: 0 auto;
+        width: 70%;
+    
+    }
+    
+    .campo__texto,
+    .campo__boton {
+        display: flex;
+        justify-content: flex-start;
+    }
+    
+    .campo__encriptado {
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    .campo__boton {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+        height: 7rem;
+    }
+
+    .mensaje,
+    .mensaje__encriptado {
+        width: 45rem;
+        height: 40rem;
+        font-size: 22px;
+    }
+    
+}
+
+/* Botón */
+.boton {
+    font-family: var(--fuenteExtra);
+    text-align: center;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-bottom: 2rem;
+    border: none;
+    background-color: var(--verde);
+    color: var(--blanco);
+    border-radius: 5px;
+}
+
+.boton:hover {
+    cursor: pointer;
+}
+
+/* Size Text area  */
+
+.mensaje,
+.mensaje__encriptado {
+    max-height: 100%;
+    overflow-y: scroll;
+    resize: none;
+
+    font-family: var(--fuenteBoton);
+}
+
+.mensaje {
+    outline: none;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--negroMate);
+    position: absolute;
+    width: 100%;
+    margin-top: 6rem;
+}
+
+.datos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.alumno,
+.carrera, 
+.copy {
+    font-size: 1.8rem;
+}
+
+.copyrght {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}

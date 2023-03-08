@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cifrado César</title>
+    <meta name="description" content="cipher">
+
+    <!-- Normalize -->
+    <link rel="Preload" href="./css/normlaize.css" as="style">
+    <link rel="stylesheet" href="./css/normlaize.css">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&family=Open+Sans:ital@1&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Hairline&display=swap" rel="stylesheet">
+
+    <!-- Style -->
+    <link rel="Preload" href="./css/style.css" as="style">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="barra">
+            <h1>Seguridad Informática</h1>
+        </div>
+
+        <div class="header__texto">
+            <p>Cifrado César</p> 
+        </div>
+    </header>
+
+    <main class="contenedor">
+        <div class="campo">
+            <div class="campo__texto">
+            <textarea class="mensaje" id="message" placeholder="Ingresa tu Mensaje"></textarea>
+            </div>
+
+            <div class="campo__encriptado">
+                <textarea class="mensaje__encriptado"  id="encriptador" disabled placeholder="Mensaje Codificado"></textarea>
+            </div>
+
+            <div class="campo__boton">
+                <input type="submit" value="Encriptar" class="boton" id="button">
+            </div>
+            
+        </div> 
+    </main>
+
+    <footer class="footer">
+
+        <div class="datos">
+            <div >
+                <p class="carrera">Ingeniería en Sistemas Energéticos y Redes Inteligentes - IPN</p>
+                
+            </div>
+    
+            <div >
+                <p class="alumno">Antonio Zaid Espinosa Reyes - 2020302334</p>
+            </div>
+        </div>
+        
+        <hr>
+
+        <div class="row">
+            <span class="copyrght">
+                <p class="copy">Copyright</p>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00b594ff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <circle cx="12" cy="12" r="9" />
+                    <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+                  </svg>
+            </span>
+        </div>
+        
+
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
